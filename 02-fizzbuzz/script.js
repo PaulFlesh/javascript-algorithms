@@ -11,7 +11,12 @@
 */
 
 function fizzBuzz(num) {
-    // Напишите код здесь
+  for (let i = 1; i = num; i++) {
+    num % 3 ? console.log('fizz') : console.log(num);
+    num % 5 ? console.log('buzz') : console.log(num);
+    (num % 3) && (num % 5) ? console.log('fizzbuzz') : console.log(num);
+  }
+  
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
