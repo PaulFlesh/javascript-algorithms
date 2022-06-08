@@ -8,7 +8,10 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+  const filter = arr.filter(function (item, position, array) {
+    return array.lastIndexOf(item) === position; // вернём уникальные элементы
+  })
+  return filter;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
