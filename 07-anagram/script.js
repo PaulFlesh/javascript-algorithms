@@ -12,7 +12,7 @@ function anagram(str1, str2) {
   str1 = str1.toLowerCase().split('').sort().join(''); // Опускаем текст в нижний регистр для удобства сравнения, преобразуем в массив,
   str2 = str2.toLowerCase().split('').sort().join(''); // поскольку sort работает только с массивом и возвращаем обратно строку
   console.log(str1, str2);
-  return (str1.toLowerCase() === str2.toLowerCase());
+  return (str1 === str2);
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
