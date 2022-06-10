@@ -9,6 +9,9 @@
 */
 
 function anagram(str1, str2) {
+  if (str1.toLowerCase() == str2.toLowerCase()) { // Если слово одно и тоже, то возвращаем ложь (хоть и одно и тоже слово в теории является анаграммой)
+    return false;
+  }
   str1 = str1.toLowerCase().split('').sort().join(''); // Опускаем текст в нижний регистр для удобства сравнения, преобразуем в массив,
   str2 = str2.toLowerCase().split('').sort().join(''); // поскольку sort работает только с массивом и возвращаем обратно строку
   console.log(str1, str2);
