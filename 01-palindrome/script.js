@@ -23,9 +23,7 @@ function palindrome(str) {
   }
   if (str === str1) { // Сравнение исходной и обратной строки
     return true;
-  } else {
-    return false;
-  }
+  } else return false;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
