@@ -21,9 +21,7 @@ function palindrome(str) {
     str1 = str[i] + str1;
     i = i + 1;
   }
-  if (str === str1) { // Сравнение исходной и обратной строки
-    return true;
-  } else return false;
+  return (str === str1) // Сравнение исходной и обратной строки
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -8,16 +8,7 @@
 */
 
 function factorial(n) {
-  if (n == 0) {
-		return 1;
-	} else if (n > 0) {
-		for (let i = 1; i <= n; i++) {
-			i *= i
-			return i*n
-		}
-		 
-
-	}
+	return (n == 0) ? 1 : n * factorial(n - 1);
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
