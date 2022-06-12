@@ -7,7 +7,7 @@
 */
 
 function capitalize(str) {
-  let strWord = str.split(' '); // Создаем из строки массив, элементы которого разделены пробелом
+  const strWord = str.split(' '); // Создаем из строки массив, элементы которого разделены пробелом
   for (let i = 0; i < strWord.length; i++) { // Запускаем цикл, в котором первый символ каждого слова из массива переводится в верхний регистр
     strWord[i] = strWord[i].slice(0, 1).toUpperCase() + strWord[i].slice(1);
   };

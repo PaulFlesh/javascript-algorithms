@@ -13,7 +13,7 @@ function isPrime(n) {
 	if (n === 2) { // Отсеиваем двойку как простое
 		return true;
 	} else if (n > 1) {
-		for (var i = 2; i < n; i++) { // Начинаем отсчет простых чисел с 3
+		for (let i = 2; i < n; i++) { // Начинаем отсчет простых чисел с 3
 			if (n % i !== 0) { // Задаем условие простого числа 
 				return true;
 			} else return false;
